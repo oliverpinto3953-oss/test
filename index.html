@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Volunteer Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>Volunteer Tracker</h1>
+
+  <!-- AUTH SECTION -->
+  <div id="auth">
+    <h2>Login / Sign Up</h2>
+    <input id="email" type="email" placeholder="Email" />
+    <input id="password" type="password" placeholder="Password" />
+    <br /><br />
+    <button onclick="signup()">Sign Up</button>
+    <button onclick="login()">Login</button>
+  </div>
+
+  <!-- DASHBOARD -->
+  <div id="dashboard" style="display:none;">
+    <h2>Log Volunteer Hours</h2>
+
+    <input id="hours" type="number" placeholder="Hours" />
+    <input id="organization" placeholder="Organization" />
+    <br /><br />
+    <button onclick="logHours()">Submit Hours</button>
+
+    <h3>Total Approved Hours: <span id="total">0</span></h3>
+
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
 
